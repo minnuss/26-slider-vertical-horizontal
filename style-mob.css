@@ -120,7 +120,7 @@ html {
 
 .slider__content__up-slide div h1 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 50%;
   color: #fff;
   font-size: 4rem;
@@ -129,8 +129,8 @@ html {
 
 .slider__content__up-slide div p {
   position: absolute;
-  top: 20%;
-  right: 50%;
+  top: 16%;
+  right: 40%;
   color: #fff;
   font-size: 2rem;
   transform: translateX(50%);
@@ -153,6 +153,10 @@ html {
   background-size: cover;
 }
 
+.slider__content__down-slide div:nth-child(1) {
+  background-position: right;
+}
+
 .slider__content__buttons .btn {
   position: absolute;
   left: 50%;
@@ -173,12 +177,12 @@ html {
 
 .slider__content__buttons--downBtn {
   border-radius: 5px 0 0 5px;
-  transform: rotate(90deg) translateY(100%) translateX(-46px);
+  transform: rotate(90deg) translateY(100%) translateX(-22px);
 }
 
 .slider__content__buttons--upBtn {
   border-radius: 0 5px 5px 0;
-  transform: rotate(90deg) translateX(100%) translateX(-46px);
+  transform: rotate(90deg) translateX(100%) translateX(-22px);
 }
 
 .switch__box {
