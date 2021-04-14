@@ -177,12 +177,12 @@ html {
 
 .slider__content__buttons--downBtn {
   border-radius: 5px 0 0 5px;
-  transform: rotate(90deg) translateY(100%) translateX(-22px);
+  transform: rotate(90deg) translateY(100%) translateX(-24px);
 }
 
 .slider__content__buttons--upBtn {
   border-radius: 0 5px 5px 0;
-  transform: rotate(90deg) translateX(100%) translateX(-22px);
+  transform: rotate(90deg) translateX(100%) translateX(-24px);
 }
 
 .switch__box {
