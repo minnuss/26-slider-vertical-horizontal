@@ -1,0 +1,223 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  font-family: 'Poppins', sans-serif; // 'Montserrat', 'Roboto';
+}
+
+.slider {
+  min-height: 100vh;
+
+  &__content {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+    &__left-slide {
+      position: absolute;
+      height: 100%;
+      width: 35%;
+      top: 0%;
+      left: 0;
+      transition: transform 0.5s ease-in;
+
+      div {
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+
+        h1 {
+          font-size: 4rem;
+          margin-bottom: 10px;
+          margin-top: -200px;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__right-slide {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 35%;
+      // with 65%, because left panel is 35%
+      width: 65%;
+      z-index: 0;
+      transition: transform 0.5s ease-in;
+
+      div {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__buttons {
+      .btn {
+        position: absolute;
+        left: 35%;
+        top: 50%;
+        cursor: pointer;
+        z-index: 100;
+
+        background-color: #fff;
+        border: none;
+        outline: none;
+        color: #aaa;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+      }
+
+      .btn:hover {
+        color: #222;
+      }
+
+      &--downBtn {
+        transform: translateX(-100%);
+        border-radius: 5px 0 0 5px;
+      }
+
+      &--upBtn {
+        transform: translateY(-100%);
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+}
+
+.switch__box {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+
+  &--switch {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 600;
+      transition: 0.3s all;
+    }
+
+    a:hover {
+      color: #222;
+    }
+  }
+  .horizontal {
+    margin-right: 50px;
+  }
+}
+
+// @media (max-width: 700px) {
+//   .slider {
+//     &__content {
+//       display: grid;
+//       grid-template-columns: auto;
+//       grid-template-rows: 0.35fr 0.65fr;
+
+//       &__up-slide {
+//         position: absolute;
+//         top: 0%;
+//         left: 0%;
+//         height: 35vh;
+//         transition: transform 0.5s ease-in;
+//         display: flex;
+
+//         div {
+//           height: 100vh;
+//           width: 100%;
+//         }
+//       }
+
+//       &__down-slide {
+//         position: absolute;
+//         top: 35%;
+//         left: 0;
+//         height: 65vh;
+//         transition: transform 0.5s ease-in;
+//         display: flex;
+
+//         div {
+//           height: 65vh;
+//           width: 100%;
+
+//           background-position: center;
+//           background-repeat: no-repeat;
+//           background-size: cover;
+
+//           h1 {
+//             position: absolute;
+//             top: 15%;
+//             right: 50%;
+//             color: #fff;
+//             font-size: 4rem;
+//             transform: translateX(50%);
+//           }
+
+//           p {
+//             position: absolute;
+//             top: 20%;
+//             right: 50%;
+//             color: #fff;
+//             font-size: 2rem;
+//             transform: translateX(50%);
+//           }
+//         }
+//       }
+
+//       &__buttons {
+//         .btn {
+//           position: absolute;
+//           left: 50%;
+//           top: 35%;
+//           cursor: pointer;
+//           z-index: 100;
+
+//           background-color: #fff;
+//           border: none;
+//           outline: none;
+//           color: #aaa;
+//           font-size: 1.6rem;
+//           padding: 1.5rem;
+//         }
+
+//         .btn:hover {
+//           color: #222;
+//         }
+
+//         &--downBtn {
+//           border-radius: 5px 0 0 5px;
+//           transform: rotate(90deg) translateY(100%) translateX(-25px);
+//         }
+
+//         &--upBtn {
+//           border-radius: 0 5px 5px 0;
+//           transform: rotate(90deg) translateX(100%) translateX(-25px);
+//         }
+//       }
+//     }
+//   }
+// }
