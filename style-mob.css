@@ -160,7 +160,7 @@ html {
 .slider__content__buttons .btn {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 35vh;
   cursor: pointer;
   z-index: 100;
   background-color: #fff;
@@ -177,12 +177,12 @@ html {
 
 .slider__content__buttons--downBtn {
   border-radius: 5px 0 0 5px;
-  transform: rotate(90deg) translateY(100%) translateX(-24px);
+  transform: rotate(90deg) translateY(100%) translateX(-46px);
 }
 
 .slider__content__buttons--upBtn {
   border-radius: 0 5px 5px 0;
-  transform: rotate(90deg) translateX(100%) translateX(-24px);
+  transform: rotate(90deg) translateX(100%) translateX(-46px);
 }
 
 .switch__box {
